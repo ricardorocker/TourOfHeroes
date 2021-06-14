@@ -1,3 +1,9 @@
-<h2>Detalhes: {{hero.name}}</h2>
-<div><span>Código: </span>{{hero.id}}</div>
-<div><span>Nome: </span>{{hero.name}}</div>
+<h2>{{hero.name}} Detalhes</h2>
+<div><span>id: </span>{{hero.id}}</div>
+<div><span>nome: </span>{{hero.name}}</div>
+
+<div>
+    <label for="name">Nome do heroi: </label>
+    <input type="text" id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
+
